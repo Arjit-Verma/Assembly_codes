@@ -30,7 +30,7 @@ L1:
                   ; cannot be accessed using LDI function
 
 L2:
-    RJMP L2
+    RJMP L2       ; This loop will make it jump here forever(end of program)
 
 
 
