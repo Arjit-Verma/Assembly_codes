@@ -25,8 +25,9 @@ L1:
     DEC R18
     MOV R4,R18
 
-    STS 0x200,R17
-    LDS R19,0X200
+    STS 0x200,R17 ; STS function store value from registers to any given address location
+    LDS R19,0X200 ; LDS function loads value from address location to registers which 
+                  ; cannot be accessed using LDI function
 
 L2:
     RJMP L2
